@@ -1,0 +1,23 @@
+<html>
+  <head>
+<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css" type="text/css">
+<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.min.css" type="text/css">
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="weather-interface.js"></script>
+    <title>Local Weather app</title>
+  </head>
+  <body class="text-center">
+    <div class="container">
+      <b><h1 id="city"></h1></b>
+      <div>
+        <h1><div class="showTemp"></div></h1>
+        <div class="showHumidity"></div><br/>
+        <div class="row">
+        <div class="windspeed" style="padding-top:20px">Wind</div>
+        <div class="dis"></div>
+        </div>
+      </div>
+    </div>
+      <input type="button" id="cel" class="btn-primary text-center" value="° C -> ° F/ ° F -> ° C"></input>
+   </body>
+</html>
