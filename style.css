@@ -1,0 +1,62 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+body{
+  color:#ffffff;
+  text-border:1px #000000;
+  font-weight: bold;
+  align:center;
+}
+#cel{
+  align:center;
+  padding:10px 45px 10px 45px;
+  margin-left:27px;
+  margin-top:30px;
+}
+.row{
+  margin-left:350px;
+}
+#city{
+  font-size:3.3em;
+}
+#city:hover,.showTemp:hover{
+  text-shadow: 2px 4px 1px #333333;
+}
+.btn-primary{
+  border:1px solid #ffffff;
+  border-radius:15px;
+}
+.showHumidity:hover,.dis:hover,.windspeed:hover{
+  box-shadow: .2em .2em .2em #222222;
+}
+.showHumidity{
+  border:2px solid #fff;
+  border-radius:50%;
+  background-color: #93AFC4;
+  background-color: rgba(200, 200, 200,.3);
+  display: inline-block;
+  font-size: 1.5em;
+  min-height: 5em;
+  min-width: 10em;
+  padding-top:33px;
+  text-shadow: 1px 1px 1px;
+}
+.dis,.windspeed{
+  border:2px solid #fff;
+  border-radius:50%;
+  background-color: #93AFC4;
+  background-color: rgba(200, 200, 200,.3);
+  display: inline-block;
+  font-size: 1.5em;
+  min-height: 5em;
+  min-width: 10em;
+  padding-top:3px;
+  text-shadow: 1px 1px 1px;
+}
+.dis{
+  margin-left:20px;
+}
+.windspeed{
+  margin-left:-10px;
+}
