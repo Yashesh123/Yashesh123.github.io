@@ -28,7 +28,7 @@ function getWeather(lat,lon){
       success: function(response) {
         $('.showHumidity').html("Humidity<br\>"+`${response.main.humidity}%`);
         var t=response.main.temp;
-        var ttf=t*1.8+32;
+        var ttf=(t*1.8+32).toFixed(2);
         var tim=new Date();
         var hour=tim.getHours();
         var wet=response.weather[0].main;
