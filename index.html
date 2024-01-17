@@ -7,15 +7,29 @@
   <body>
     <script src="scripts/script.js"></script>
     <div class="container">
+      <div class="nav">
+        <ul>
+          <li><a onclick="jump('second-slide')">Work</a></li>
+          <li><a onclick="jump('third-slide')">Projects</a></li>
+          <li><a onclick="jump('fourth-slide')">Blogs</a></li>
+          <li><a onclick="jump('fifth-slide')">About</a></li>
+          <li><a onclick="jump('sixth-slide')">Contact</a></li>
+        </ul>
+      </div>
       <div class="first-slide">
         <div class="typewrite">
           <p class="hello-msg">Hello,</p>
           <span class="wrap"></span>
+          <div class="first-slide-desc">
+            <br/>
+            I've experience in creating robust frontend and backend systems.
+            <br />
+            Have keen interest in learning new technologies.
+          </div>
         </div>
-        <div class="first-slide-desc">
-          I've experience creating robust frontend and backend systems.<br />
-          Have keen interest in learning new technologies.
-          <img src="docs/assets/profilepic-removebg-preview.png">
+
+        <div>
+          <img src="docs/assets/profilepic-removebg-preview.png" />
         </div>
       </div>
       <div class="second-slide">
@@ -23,7 +37,7 @@
           <p class="experience-title">Work Experience</p>
           <div class="experience-desc">
             <section>
-              <p>Infosys</p>
+              <p id="company-name">Infosys</p>
               <ul>
                 <li>
                   <div>
@@ -50,21 +64,23 @@
         <div class="education-container">
           <p class="education-title">Education</p>
           <section class="education-desc">
-              <ul>
-                <li>
-                  <div>
-                    <p class="title">G H Patel College of Engineer & Technology</p>
-                    <p class="timeline">2015 - 2019</p>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <p class="title">G.K. Dholakiya High School</p>
-                    <p class="timeline">2013 - 2015</p>
-                  </div>
-                </li>
-              </ul>
-            </section>
+            <ul>
+              <li>
+                <div>
+                  <p class="title">
+                    G H Patel College of Engineer & Technology
+                  </p>
+                  <p class="timeline">2015 - 2019</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p class="title">G.K. Dholakiya High School</p>
+                  <p class="timeline">2013 - 2015</p>
+                </div>
+              </li>
+            </ul>
+          </section>
         </div>
       </div>
       <div class="third-slide">

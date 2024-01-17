@@ -79,3 +79,8 @@ window.onscroll = function (event) {
     }
   });
 };
+
+function jump(className) {
+  var element = document.getElementsByClassName(className)[0];
+  element.scrollIntoView({behavior:"smooth"});
+}
