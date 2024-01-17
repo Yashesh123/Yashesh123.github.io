@@ -1,1 +1,0 @@
-# Local Weather App
