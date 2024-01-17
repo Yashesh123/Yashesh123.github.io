@@ -5,15 +5,15 @@ body {
   bottom: 0;
   margin: 0;
   padding: 0;
-  font-family: "Helvetica", "Arial", "Sans-Serif";
-  height: 100%;
   width: 100%;
-  position: absolute;
+  height: 100%;
+  font-family: "Helvetica", "Arial", "Sans-Serif";
+  background-color: #f8edff;
 }
 
 ::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
 
 p {
@@ -31,15 +31,15 @@ p {
   font-size: 50px;
 }
 
-.wrap{
+.wrap {
   position: relative;
   font-size: 40px;
 }
 
 .first-slide {
   position: relative;
-  background-color: #F8EDFF;
-  color: #3D3B40;
+  background-color: #f8edff;
+  color: #3d3b40;
   width: 100%;
   height: 90%;
   display: flexbox;
@@ -47,46 +47,89 @@ p {
   text-align: center;
 }
 
-.first-slide-desc{
+.first-slide-desc {
   color: inherit;
-
 }
 
 .second-slide {
   position: relative;
-  background-color: #F8EDFF;
+  background-color: #f8edff;
   width: 100%;
   height: 90%;
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .third-slide {
   position: relative;
-  background-color: #F8EDFF;
+  background-color: #f8edff;
   width: 100%;
   height: 100%;
+  opacity: 0;
 }
 
-.second-slide-container, .third-slide-container{
+.experience-container,
+.education-container,
+.third-slide-container {
   margin: 10px;
-  position: absolute;
+  opacity: 0;
+  width: 400px;
+
 }
 
-.second-slide-title, .third-slide-title{
-  color: #3D3B40;
+.experience-title,
+.education-title,
+.third-slide-title {
+  color: #3d3b40;
   font-size: 50px;
+  opacity: 0;
 }
 
-.animate-second-slide {
-  animation: fadeIn 500ms ease-out backwards;
+.experience-desc ul li,
+.education-desc ul li {
+  list-style-type: none;
+  background: black;
+  width: 6px;
+  position: relative;
+}
+
+.experience-desc ul li div,
+.education-desc ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px 15px 15px 25px;
+}
+
+
+.experience-desc ul li::after,
+.education-desc ul li::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: inherit;
+  z-index: 1;
+  margin-top: -50px;
+}
+
+.animate {
+  animation: fadeIn 750ms ease-out backwards;
+  opacity: 1;
 }
 
 @keyframes fadeIn {
   from {
-    transform: translateX(250px);
+    transform: translateY(250px);
     opacity: 0;
   }
   to {
-    transform: translateX(0px);
+    transform: translateY(0px);
     opacity: 1;
   }
 }

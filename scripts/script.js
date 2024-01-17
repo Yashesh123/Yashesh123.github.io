@@ -1,3 +1,16 @@
+var htmlClassLoadOrder = [
+  "second-slide",
+  "experience-container",
+  "experience-title",
+  "experience-desc",
+  "education-container",
+  "education-title",
+  "education-desc",
+  "third-slide",
+  "third-slide-container",
+  "third-slide-title",
+];
+
 var TxtType = function (el, toRotate) {
   console.log(toRotate);
   this.toRotate = toRotate;
@@ -52,16 +65,17 @@ window.onload = function () {
   document.body.appendChild(css);
 };
 
-window.onscroll = function(event) {
-  var firstSlidePos = document.getElementsByClassName("first-slide")[0].offsetTop
-  var secondSlidePos = document.getElementsByClassName("second-slide")[0].offsetTop
-  var thirdSlidePos = document.getElementsByClassName("third-slide")[0].offsetTop
-
-  var scrollPosition = window.scrollY+secondSlidePos;
-  if(scrollPosition > secondSlidePos){
-    console.log("in")
-    document.getElementsByClassName("second-slide")[0].style.display = 'hidden'
-  }
-  console.log(secondSlidePos)
-  console.log(scrollPosition+secondSlidePos)
+function isInViewport(element) {
+  const elementRectangle = element.getBoundingClientRect();
+  return elementRectangle.top < window.innerHeight - 100;
 }
+
+window.onscroll = function (event) {
+  htmlClassLoadOrder.forEach((className) => {
+    var classElement = document.getElementsByClassName(className)[0];
+    if (isInViewport(classElement)) {
+      console.log(className)
+      classElement.classList.add("animate");
+    }
+  });
+};
