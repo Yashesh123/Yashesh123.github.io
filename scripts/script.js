@@ -9,7 +9,24 @@ var htmlClassLoadOrder = [
   "third-slide",
   "third-slide-container",
   "third-slide-title",
+  "project-list",
+  "blog-slide",
+  "blog-slide-container",
+  "blog-slide-title",
+  "blog-list",
+  "about-slide",
+  "about-slide-container",
+  "about-slide-title",
+  "about-list",
+  "skill-container",
+  "skill-container-title",
+  "skill-list",
+  "contact-slide",
+  "contact-slide-container",
+  "contact-slide-title",
 ];
+
+var typeWriterMsgs = ["I'm Yashesh Chauhan", "I'm a Full-Stack Developer"];
 
 var TxtType = function (el, toRotate) {
   console.log(toRotate);
@@ -56,9 +73,8 @@ TxtType.prototype.tick = function () {
 };
 
 window.onload = function () {
-  var dataText = ["I'm Yashesh Chauhan", "I'm a Full-Stack Developer"];
   var elements = document.querySelector(".typewrite span");
-  new TxtType(elements, dataText);
+  new TxtType(elements, typeWriterMsgs);
 
   var css = document.createElement("style");
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #bbb}";
@@ -74,7 +90,7 @@ window.onscroll = function (event) {
   htmlClassLoadOrder.forEach((className) => {
     var classElement = document.getElementsByClassName(className)[0];
     if (isInViewport(classElement)) {
-      console.log(className)
+      console.log(className);
       classElement.classList.add("animate");
     }
   });
@@ -82,5 +98,5 @@ window.onscroll = function (event) {
 
 function jump(className) {
   var element = document.getElementsByClassName(className)[0];
-  element.scrollIntoView({behavior:"smooth"});
+  element.scrollIntoView({ behavior: "smooth" });
 }

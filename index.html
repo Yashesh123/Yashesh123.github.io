@@ -11,9 +11,9 @@
         <ul>
           <li><a onclick="jump('second-slide')">Work</a></li>
           <li><a onclick="jump('third-slide')">Projects</a></li>
-          <li><a onclick="jump('fourth-slide')">Blogs</a></li>
-          <li><a onclick="jump('fifth-slide')">About</a></li>
-          <li><a onclick="jump('sixth-slide')">Contact</a></li>
+          <li><a onclick="jump('blog-slide')">Blogs</a></li>
+          <li><a onclick="jump('about-slide')">More About Me</a></li>
+          <li><a onclick="jump('contact-slide')">Contact</a></li>
         </ul>
       </div>
       <div class="first-slide">
@@ -21,14 +21,15 @@
           <p class="hello-msg">Hello,</p>
           <span class="wrap"></span>
           <div class="first-slide-desc">
-            <br/>
+            <br />
             I've experience in creating robust frontend and backend systems.
             <br />
-            Have keen interest in learning new technologies.
+            Have keen interest in learning new technologies and enthusiastic
+            about how technologies work behind the scenes.
           </div>
         </div>
 
-        <div>
+        <div id="profile-pic">
           <img src="docs/assets/profilepic-removebg-preview.png" />
         </div>
       </div>
@@ -37,7 +38,12 @@
           <p class="experience-title">Work Experience</p>
           <div class="experience-desc">
             <section>
-              <p id="company-name">Infosys</p>
+              <div class="work-logo-name">
+                <img src="docs/assets/infosys-logo.png" />
+                <p id="company-name">
+                  <a href="https://www.infosys.com/" target="_blank">Infosys</a>
+                </p>
+              </div>
               <ul>
                 <li>
                   <div>
@@ -54,11 +60,22 @@
                 <li>
                   <div>
                     <p class="title">System Engineer Specialist</p>
-                    <p class="timeline">Jan 2021 - July 2021</p>
+                    <p class="timeline">July 2019 - Jan 2021</p>
                   </div>
                 </li>
               </ul>
             </section>
+            <div class="work-resp">
+              <h3>Description:</h3>
+              <p>
+                From collaborating with clients and stakeholders to collect
+                requirements, designing and developing robust and secure
+                functionalities while following timelines and priorities, test
+                newly added features and deploy them in production environments,
+                take feedbacks, to mentoring and giving guidance to new team
+                members. I've gain experience working in every step of SDLC.
+              </p>
+            </div>
           </div>
         </div>
         <div class="education-container">
@@ -70,12 +87,14 @@
                   <p class="title">
                     G H Patel College of Engineer & Technology
                   </p>
+                  <p class="timeline">BE - Computer Engineering</p>
                   <p class="timeline">2015 - 2019</p>
                 </div>
               </li>
               <li>
                 <div>
                   <p class="title">G.K. Dholakiya High School</p>
+                  <p class="timeline">HSC - Science</p>
                   <p class="timeline">2013 - 2015</p>
                 </div>
               </li>
@@ -86,6 +105,215 @@
       <div class="third-slide">
         <div class="third-slide-container">
           <p class="third-slide-title">Personal Projects</p>
+          <div class="project-list">
+            <ul>
+              <li>
+                <label>Chat and Video Calling App</label>
+                <p>
+                  Used webSocketSubject and RTPC with Angular to create UI and
+                  used springboot WebSocketHandler for backend server. For
+                  faster access of messages and user account details have went
+                  and used springboot native H2 db.
+                </p>
+                <p>
+                  Code here:
+                  <a
+                    href="https://github.com/Yashesh123/ChatApplication"
+                    target="_blank"
+                    ><img src="docs/assets/github.png"
+                  /></a>
+                </p>
+                <footer>
+                  <legend>
+                    <img src="docs/assets/spring-boot.png" />Springboot
+                  </legend>
+                  <legend><img src="docs/assets/java.png" />Java</legend>
+                  <legend><img src="docs/assets/angular.png" />Angular</legend>
+                  <legend>
+                    <img src="docs/assets/typescript.png" />TypeScript
+                  </legend>
+                  <legend><img src="docs/assets/socket.png" />WebSocket</legend>
+                  <legend>
+                    <img src="docs/assets/database.png" />H2 Database
+                  </legend>
+                  <legend><img src="docs/assets/restapi.png" />REST-API</legend>
+                </footer>
+              </li>
+              <li>
+                <label>Local Weather App</label>
+                <p>
+                  Small local weather application using vanila JS and third
+                  party weather API
+                </p>
+                <p>
+                  Code here:
+                  <a
+                    href="https://github.com/Yashesh123/Local-weather-App"
+                    target="_blank"
+                    ><img src="docs/assets/github.png"
+                  /></a>
+                </p>
+                <footer>
+                  <legend><img src="docs/assets/html.png" />HTML</legend>
+                  <legend><img src="docs/assets/css.png" />CSS</legend>
+                  <legend>
+                    <img src="docs/assets/javascript.png" />JavaScript
+                  </legend>
+                  <legend><img src="docs/assets/jquery.png" />Jquery</legend>
+                </footer>
+              </li>
+              <li>
+                <label>More To Come...</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-slide">
+        <div class="blog-slide-container">
+          <p class="blog-slide-title">Blogs</p>
+          <div class="blog-list">
+            <div class="blog-card">
+              <label
+                ><q
+                  >Some lesser known facts about coding mindset that I have
+                  learnt.</q
+                ></label
+              >
+              <img src="docs/assets/blog1.png" />
+              <p class="blog-card-desc">
+                Written some points about coding mindset that I have learnt in
+                my software Engineering journey till now.
+              </p>
+              <footer>
+                <legend>Coding Mindset</legend>
+                <legend>Programming</legend>
+                <legend>Personal Development</legend>
+                <legend>Software Development</legend>
+                <legend>Software Mindset</legend>
+              </footer>
+              <p>
+                Read
+                <a
+                  target="_blank"
+                  href="https://medium.com/@yasheshschauhan/some-lesser-known-facts-about-coding-mindset-that-i-have-learnt-a0c2c397c89a"
+                  >Here</a
+                >
+              </p>
+            </div>
+            <div class="blog-card-special">
+              <label>More To Come...</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-slide">
+        <div class="about-slide-container">
+          <p class="about-slide-title">More About Me</p>
+          <div class="about-list">
+            <ul>
+              <li>
+                <p class="question">Who Am I?</p>
+                <p class="answer">
+                  I am <b>Yashesh Chauhan</b>, a full-stack developer based out
+                  of India. I've completed my bachelors in Computer Engineering
+                  in 2019.
+                </p>
+              </li>
+              <li>
+                <p class="question">My Professional Experience till now!</p>
+                <p class="answer">
+                  After I Completed my BE, I embark the journey of
+                  <b>Software Engineering</b> where in this past years, I was
+                  fortunate enough to work on company projects which requires
+                  not only technical knowledge but also require industry
+                  awareness, ability to keep myself up-to-date with this ever
+                  changing domain. <br /><br />
+                  I've worked at both frontend and at backend side of systems.
+                  Have created UI components which is good looking and have
+                  better user experience. Have created APIs which can handle
+                  high concurrent traffic and can seamlessly communicate with
+                  other systems. From unit testing, regression testing to load
+                  testing have tested softwares based on feature they have. Have
+                  done deployment activities for development and production
+                  environments.
+                </p>
+              </li>
+              <li>
+                <p class="question">What I am passionate about?</p>
+                <p class="answer">
+                  I love helping people by providing them solutions using
+                  software technologies. Have interest in learning new
+                  technologies and knowing how they works. Love solving
+                  interesting engineering problems.
+                  <br /><br />
+                  Other than technological likings I also have interest in
+                  cosmology and in science of space.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill-container">
+          <p class="skill-container-title">Technical Skills</p>
+          <div class="skill-list">
+            <div class="frontend-skills">
+              <label>Frontend Skills</label>
+              <section>
+                <ul>
+                  <li><img src="docs/assets/angular.png" /> Angular</li>
+                  <li><img src="docs/assets/typescript.png" /> TypeScript</li>
+                  <li><img src="docs/assets/javascript.png" /> Javascript</li>
+                  <li><img src="docs/assets/html.png" /> HTML</li>
+                  <li><img src="docs/assets/css.png" /> CSS</li>
+                  <li><img src="docs/assets/angular.png" /> NGRx</li>
+                </ul>
+              </section>
+            </div>
+            <div class="backend-skills">
+              <label>Backend Skills</label>
+              <section>
+                <ul>
+                  <li><img src="docs/assets/java.png" /> Java</li>
+                  <li><img src="docs/assets/spring-boot.png" /> Springboot</li>
+                  <li><img src="docs/assets/graphql.png" /> GraphQL</li>
+                  <li><img src="docs/assets/java.png" /> Java</li>
+                  <li><img src="docs/assets/nodejs.png" /> NodeJS</li>
+                  <li><img src="docs/assets/javascript.png" /> ExpressJS</li>
+                </ul>
+              </section>
+            </div>
+            <div class="other-skills">
+              <label>Databases</label>
+              <section>
+                <ul>
+                  <li><img src="docs/assets/postgres.png" /> Postgres</li>
+                  <li><img src="docs/assets/mysql.png" /> MySql</li>
+                  <li><img src="docs/assets/database.png" /> GraphDBs (Neo4j, Janusgraph)</li>
+                  <li><img src="docs/assets/mongodb.png">MongoDB</li>
+                </ul>
+              </section>
+            </div>
+            <div class="other-tools">
+              <label>Other Tools</label>
+              <section>
+                <ul>
+                  <li><img src="docs/assets/docker.png" /> Docker</li>
+                  <li><img src="docs/assets/Kubernetes.png" /> Kubernetes</li>
+                  <li><img src="docs/assets/github.png" /> Git/Github</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-slide">
+        <div class="contact-slide-container">
+          <p class="contact-slide-title">Contacts</p>
+          <p>Find me here:</p>
         </div>
       </div>
     </div>
