@@ -97,6 +97,12 @@ p {
   font-size: large;
 }
 
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .second-slide {
   position: relative;
   background-color: #f8edff;
@@ -118,6 +124,8 @@ p {
   width: 100%;
   opacity: 0;
   margin-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .experience-container,
@@ -286,7 +294,7 @@ p {
 
 .blog-card,
 .blog-card-special {
-  width: 450px;
+  width: 29%;
   height: 450px;
   border: 2px solid #bbb;
   border-radius: 5px;
