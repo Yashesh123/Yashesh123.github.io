@@ -85,12 +85,12 @@ p {
   background-color: #f8edff;
   color: #3d3b40;
   width: 100%;
-  height: 90%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 
 .first-slide-desc {
@@ -101,12 +101,13 @@ p {
   position: relative;
   background-color: #f8edff;
   width: 100%;
-  height: 90%;
   opacity: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-bottom: 100px;
+
 }
 
 .third-slide,
@@ -115,8 +116,8 @@ p {
   position: relative;
   background-color: #f8edff;
   width: 100%;
-  height: 100%;
   opacity: 0;
+  margin-bottom: 100px;
 }
 
 .experience-container,
@@ -343,6 +344,8 @@ p {
   flex-wrap: wrap;
   background-color: #f8edff;
   width: 100%;
+  margin-bottom: 100px;
+
 }
 
 .about-list ul {
@@ -357,6 +360,10 @@ p {
   margin-top: 10px;
 }
 
+.about-list .answer {
+  text-align: justify;
+}
+
 .skill-list {
   display: flex;
   flex-direction: row;
@@ -369,12 +376,12 @@ p {
   padding: 0px;
 }
 
-.skill-list img{
+.skill-list img {
   width: 16px;
   height: 16px;
 }
 
-.skill-list li{
+.skill-list li {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -389,4 +396,31 @@ p {
   font-size: 25px;
 }
 
+.contact-slide-container ul li {
+  list-style: none;
+  text-decoration: none;
+}
 
+.contact-slide-container img {
+  width: 100%;
+  height: 50px;
+}
+
+.contact-slide-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  padding: 0;
+}
+
+.final-footer{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  -webkit-box-shadow: 0 8px 6px -6px #bbb inset;
+  -moz-box-shadow: 0 8px 6px -6px #bbb inset;
+  box-shadow: 0 8px 6px -6px #bbb inset;
+  padding: 20px;
+  font-size: 25px;
+}
