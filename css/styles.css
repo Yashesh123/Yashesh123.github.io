@@ -166,7 +166,7 @@ p {
   bottom: 0;
   max-width: 480px;
   padding: 15px 15px 15px 25px;
-  width: 350px;
+  width: 400px;
 }
 
 .experience-desc ul li::after,
@@ -307,6 +307,11 @@ p {
 
   .nav ul {
     display: none;
+  }
+
+  .experience-desc ul li div,
+  .education-desc ul li div {
+    width: 300px;
   }
 }
 
