@@ -9,12 +9,13 @@ body {
   height: 100%;
   font-family: "Helvetica", "Arial", "Sans-Serif";
   background-color: #f8edff;
+  overflow-x: hidden;
 }
-/* 
+
 ::-webkit-scrollbar {
   width: 0px;
-  background: transparent; 
-} */
+  background: transparent;
+}
 
 p {
   margin: 0;
@@ -31,10 +32,6 @@ p {
 .hello-msg {
   font-size: 100px;
   color: #150050;
-}
-
-.typewrite {
-  /* width: 50%; */
 }
 
 .wrap {
@@ -98,10 +95,8 @@ p {
   text-align: justify;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.sildes {
+  padding: 10px;
 }
 
 .second-slide {
@@ -154,7 +149,6 @@ p {
 .skill-container-title {
   color: #150050;
   font-size: 50px;
-  opacity: 0;
   margin-bottom: 10px;
 }
 
@@ -170,8 +164,9 @@ p {
 .education-desc ul li div {
   position: relative;
   bottom: 0;
-  width: 400px;
+  max-width: 480px;
   padding: 15px 15px 15px 25px;
+  width: 350px;
 }
 
 .experience-desc ul li::after,
@@ -189,7 +184,7 @@ p {
 }
 
 .animate {
-  animation: fadeIn 750ms ease-out backwards;
+  animation: fadeIn 1000ms ease-out backwards;
   opacity: 1;
 }
 
@@ -310,7 +305,7 @@ p {
     width: 100%;
   }
 
-  .nav ul{
+  .nav ul {
     display: none;
   }
 }

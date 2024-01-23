@@ -1,29 +1,16 @@
 var htmlClassLoadOrder = [
   "second-slide",
   "experience-container",
-  "experience-title",
-  "experience-desc",
   "education-container",
-  "education-title",
-  "education-desc",
   "third-slide",
   "third-slide-container",
-  "third-slide-title",
-  "project-list",
   "blog-slide",
   "blog-slide-container",
-  "blog-slide-title",
-  "blog-list",
   "about-slide",
   "about-slide-container",
-  "about-slide-title",
-  "about-list",
   "skill-container",
-  "skill-container-title",
-  "skill-list",
   "contact-slide",
   "contact-slide-container",
-  "contact-slide-title",
 ];
 
 var typeWriterMsgs = ["I'm Yashesh Chauhan", "I'm a Full-Stack Developer"];
@@ -83,14 +70,16 @@ window.onload = function () {
 
 function isInViewport(element) {
   const elementRectangle = element.getBoundingClientRect();
-  return elementRectangle.top < window.innerHeight - 100;
+  return elementRectangle.top < window.innerHeight;
 }
 
 window.onscroll = function (event) {
   htmlClassLoadOrder.forEach((className) => {
     var classElement = document.getElementsByClassName(className)[0];
-    if (isInViewport(classElement)) {
-      console.log(className);
+    if (
+      isInViewport(classElement) &&
+      !classElement.classList.contains("animate")
+    ) {
       classElement.classList.add("animate");
     }
   });
