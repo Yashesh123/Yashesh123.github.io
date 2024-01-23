@@ -10,11 +10,11 @@ body {
   font-family: "Helvetica", "Arial", "Sans-Serif";
   background-color: #f8edff;
 }
-
+/* 
 ::-webkit-scrollbar {
-  width: 0px; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
-}
+  width: 0px;
+  background: transparent; 
+} */
 
 p {
   margin: 0;
@@ -34,7 +34,7 @@ p {
 }
 
 .typewrite {
-  width: 50%;
+  /* width: 50%; */
 }
 
 .wrap {
@@ -95,9 +95,10 @@ p {
 
 .first-slide-desc {
   font-size: large;
+  text-align: justify;
 }
 
-.content{
+.content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,7 +114,6 @@ p {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-bottom: 100px;
-
 }
 
 .third-slide,
@@ -246,6 +246,7 @@ p {
 .project-list ul {
   text-decoration: none;
   list-style: none;
+  padding: 0;
 }
 
 .project-list ul li {
@@ -295,13 +296,23 @@ p {
 .blog-card,
 .blog-card-special {
   width: 29%;
-  height: 450px;
   border: 2px solid #bbb;
   border-radius: 5px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .blog-card,
+  .blog-card-special {
+    width: 100%;
+  }
+
+  .nav ul{
+    display: none;
+  }
 }
 
 .blog-card label {
@@ -317,6 +328,7 @@ p {
   width: 300px;
   min-height: 150px;
   image-rendering: optimizeQuality;
+  max-width: 100%;
 }
 
 .blog-card legend {
@@ -353,7 +365,6 @@ p {
   background-color: #f8edff;
   width: 100%;
   margin-bottom: 100px;
-
 }
 
 .about-list ul {
@@ -422,7 +433,7 @@ p {
   padding: 0;
 }
 
-.final-footer{
+.final-footer {
   display: flex;
   justify-content: center;
   flex-direction: row;
